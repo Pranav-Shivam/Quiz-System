@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title></title>
+        <style type="text/css">
+            /* Style inputs with type="text", select elements and textareas */
+            input, select, textarea {
+                width: 100%; /* Full width */
+                padding: 12px; /* Some padding */
+                border: 1px solid #ccc; /* Gray border */
+                border-radius: 4px; /* Rounded borders */
+                box-sizing: border-box; /* Make sure that padding and width stays in place */
+                margin-top: 6px; /* Add a top margin */
+                margin-bottom: 16px; /* Bottom margin */
+                resize: vertical /* Allow the user to vertically resize the textarea (not horizontally) */
+            }
+
+            /* Style the submit button with a specific background color etc */
+            button
+            {
+                background-color: #00CED1;
+                color: white;
+                border-radius: 25px;
+                padding: 12px 20px;
+                border: none;
+                border-radius: 4px;
+                cursor: pointer;
+            }
+
+            /* When moving the mouse over the submit button, add a darker green color */
+            #submi :hover {
+                background-color: #00FFFF;
+            }
+
+            /* Add a background color and some padding around the form */
+            .container {
+                border-radius: 5px;
+                background-color: #FFF8DC;
+                padding: 20px;
+            }
+        </style>
+    </head>
+    <body>
+        <<form action="Feedback.jsp">
+            <div class="container">
+
+                <label for="fname">First Name</label>
+                <input type="text" id="fname" name="firstname" placeholder="Please enter your First Name">
+
+                <label for="lname">Last Name</label>
+                <input type="text" id="lname" name="lastname" placeholder="Please enter your Last Name">
+
+                <label for="email">Email Id</label>
+                <input type="text" id="email" name="email" placeholder="Please enter your Email Id">
+
+                <label for="number">Mobile NO.</label>
+                <input type="text" id="number" name="number" placeholder="Please enter your Mobile No.">
+
+                <label for="City">City</label>
+                <select id="City" name="City">
+                    <option value="Bhagalpur">Bhagalpur</option>
+                    <option value="Patna">Patna</option>
+                    <option value="New">New Delhi</option>
+                    <option value="Bhagalpur">Gaya</option>
+                    <option value="Patna">Banka</option>
+                    <option value="New">Purnea</option>
+                </select>
+
+                <label for="subject">Subject</label>
+                <textarea id="subject" name="subject" placeholder="Write your feeedbAck" style="height:200px"></textarea>
+                <button value="Submit" style="color: white; height: 50px; width:120px; background-color: green;">Submit</button>
+                <a href="index.html"> <button value="Cancel" style="color: white; height: 50px; width:120px; background-color: red;">Cancel</button></a>
+                <!-- 
+                            <input type="submit" value="Submit">
+                -->
+            </div>
+        </form>
+<!--        <script type="text/javascript">
+            function Submi(argument)
+            {
+                document.write("<center><h1>Thanks for your valuable feedback!<br></h1></center>");
+                document.write("<center><button id=paapa onclick=back()>Go Home Page</button></center>");
+            }
+            function back()
+            {
+                Window = window.open("Feedback.jsp", "#", "width=1600px, height=800px");
+                window.close();
+            }
+        </script>-->
+    </body>
+</html>
